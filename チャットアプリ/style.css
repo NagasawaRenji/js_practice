@@ -15,13 +15,14 @@
 }
 
 .header-hamburger {
-    width: 30px;
-    height: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    justify-content: right;
-    cursor: pointer;
+	 background: none;
+	 border: none;
+	 cursor: pointer;
+	 displaay: flex;
+	 flex-direction: column;
+	 justify-content: space-around;
+	 width: 30px;
+	 height: 20px;
 }
 
 .body-background-style {
