@@ -1,0 +1,17 @@
+.point-count {
+    font-size: 200px;
+    text-align: center;
+    color: red;
+}
+
+.position {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.position img {
+    width: 250px;
+    height: 250px;
+}
