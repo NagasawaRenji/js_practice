@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css?v=1.1">
+    <title>チャットアプリ</title>
+</head>
+<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    <!-- チャット画面上部 -->
+    <header class="header-style">
+        <p class="font-style">チャットホーム</p>
+        <!-- ハンバーガーボタン -->
+        <button id="hamburgerButton" class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+    </header>
+
+    <!-- チャット全体 -->
+    <div class="body-background-style">
+        <!-- 相手のアイコンとメッセージ -->
+        <div></div>
+
+        <!-- 自分のアイコンとメッセージ -->
+        <div></div>
+    </div>
+
+    <!-- ハンバーガーメニューのコンテンツ -->
+     <div class="toggle-menu">
+        <!-- 閉じるボタン -->
+        <button id="closeMenuButton" class="close-menu"><img src="images/close_menu.png"></button>
+        <h3 class="header">設定</h3>
+        <p class="list"><img src="images/profile.png">プロフィール</p>
+        <p class="list"><img src="images/friend.png">フレンド</p>
+        <p class="list"><img src="images/logout.png">ログアウト</p>
+    </div>
+
+    <!-- JavaScriptファイルを読み込む -->
+    <script src="chat.js"></script>
+</body>
+</html>

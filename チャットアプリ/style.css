@@ -1,3 +1,4 @@
+/* ヘッダ部分 */
 .header-style {
     display: flex;
     align-items: center;
@@ -6,27 +7,89 @@
     background-color: rgb(100, 100, 200);
 }
 
-.header-font-style {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.header-style .font-style {
     color: white;
     font-size: 30px;
 }
 
-.header-hamburger {
-	 background: none;
-	 border: none;
-	 cursor: pointer;
-	 displaay: flex;
-	 flex-direction: column;
-	 justify-content: space-around;
-	 width: 30px;
-	 height: 20px;
+.header-style .hamburger {
+    position: absolute;
+    right: 30px;
+	cursor: pointer;
+    display: flex;
+    flex-direction: column;            /* flex化した子要素を縦並びにする */
+    justify-content: space-around;     /* flex化した子要素間に均等なスペースを配置する */
+	width: 30px;
+	height: 24px;
+    border: none;
+    background: none;                  /* 子要素の境界線を取り除く */
+    padding: 0;
 }
 
+.header-style .hamburger .line  {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;                 /* 要素の角を2pxの半径で丸くする */
+}
+
+/* チャット本体の部分 */
 .body-background-style {
     width: 100%;
     height: 100vh;
     background-color: rgb(200, 240, 255);
+}
+
+
+/* メニュー内容 */
+.toggle-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(30% - 10px);
+    height: 100vh;
+    background-color: rgba(40, 45, 100, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.4s ease;    /* 0.4秒間にわたって滑らかにトランジション効果を出す */
+}
+
+.toggle-menu .close-menu {
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 45px;
+	width: 30px;
+	height: 24px;
+    background: none;
+    border: none;
+}
+
+.toggle-menu .close-menu img {
+    width: 50px;
+    height: 50px;
+}
+
+.toggle-menu .header {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.toggle-menu .list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.toggle-menu img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu-open {
+    transform: translateX(0);
 }
