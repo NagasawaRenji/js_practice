@@ -23,3 +23,23 @@ document.getElementById("closeMenuButton").addEventListener("click", function() 
     // 閉じるボタンの表示をやめる
     document.querySelector(".close-menu").classList.remove("close-menu-open");
 });
+
+// メッセージを送信したときの処理
+document.getElementById("textForm").addEventListener("submit", function(e) {
+
+    // フォームのデフォルトの送信動作をキャンセル
+    e.preventDefault();
+
+    // テキスト内容をもとにノードの作成
+    let newText = document.getElementById("inputText").value;
+    let newTextElement = document.createElement("p");
+
+    newTextElement.textContent = newText;
+
+    // 親要素直下に配置
+    let parentElement = document.getElementById("myselfMessage");
+    parentElement.appendChild(newTextElement);
+
+    // 入力フィールドをクリア
+    document.getElementById("inputText").value = "";
+});

@@ -6,12 +6,10 @@
     height: 100px;
     background-color: rgb(100, 100, 200);
 }
-
 .header-style .font-style {
     color: white;
     font-size: 30px;
 }
-
 .header-style .hamburger {
     position: absolute;
     right: 30px;
@@ -25,7 +23,6 @@
     background: none;                  /* 子要素の境界線を取り除く */
     padding: 0;
 }
-
 .header-style .hamburger .line  {
     width: 100%;
     height: 4px;
@@ -39,7 +36,15 @@
     height: 100vh;
     background-color: rgb(200, 240, 255);
 }
-
+.message-sending-form {
+    position: fixed;
+    left: 10px;
+    bottom: 5px;
+}
+.message-sending-form .text-content {
+    width: 70%;
+    height: 20px;
+}
 
 /* メニュー内容 */
 .toggle-menu {
@@ -52,7 +57,6 @@
     transform: translateX(100%);
     transition: transform 0.4s ease;    /* 0.4秒間にわたって滑らかにトランジション効果を出す */
 }
-
 .toggle-menu .close-menu {
     cursor: pointer;
     position: absolute;
@@ -63,19 +67,16 @@
     background: none;
     border: none;
 }
-
 .toggle-menu .close-menu img {
     width: 50px;
     height: 50px;
 }
-
 .toggle-menu .header {
     font-size: 25px;
     color: white;
     text-align: center;
     padding-top: 50px;
 }
-
 .toggle-menu .list {
     display: flex;
     align-items: center;
@@ -84,12 +85,10 @@
     padding-left: 20px;
     padding-bottom: 10px;
 }
-
 .toggle-menu img {
     width: 50px;
     height: 50px;
 }
-
 .menu-open {
     transform: translateX(0);
 }
